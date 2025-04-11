@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrique Rashide Frías - Fotógrafo</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- El CSS para los estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="barra-navegacion">
+        <div class="container">
+            <div class="nav-contenido">
+                <h1 class="texto-titulo">Enrique Rashide Frías</h1>
+                <div class="enlaces-sociales">
+                    <!--Aqui se hace uso de la brirería Font Awesome para los íconos de las redes sociales -->
+                    <a href="https://www.instagram.com/rashidefrias/reels/?__d=1%3Futm_source%3Dig_embed"><i class="fab fa-instagram"></i></a>
+                    <a href="https://rashide-frias.wixsite.com/rashide-frias"><i class="fab fa-wix"></i></a>
+                    <a href="https://www.facebook.com/enriquerashide.serratofrias/?locale=es_LA"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Pantalla de inicio con el título -->
+    <section class="seccion-inicioenq" style="background-image: url('image/enrique.jpg')">
+        <div class="container">
+            <div class="inicioenq-contenido">
+                <h2 class="texto-inicioenq"> México y su escencia </h2>
+                <p class="texto-subtitulo">Fotoperiodista | Premio Nacional de Periodismo</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section class="seccion-sobre-mi">
+        <div class="container">
+            <div class="sobre-mi-contenido">
+                <h2 class="texto-seccion">Sobre Mí</h2>
+                <p class="texto-contenido">
+                    Soy uno de los periodistas más reconocidos de los últimos años, galardonado con el Premio Nacional de Periodismo en dos ocasiones. A través de mi lente, exploro la rica cultura mexicana, donde el hiperrealismo, la fe y la tradición se entrelazan para crear obras que celebran la vida cotidiana de nuestro pueblo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Video -->
+    <section class="seccion-video">
+        <div class="container">
+            <h2 class="texto-seccion">Mi Trabajo</h2>
+            <div class="contenedor-video">
+                <div class="video-placeholder">
+                    <a href="https://mxplus.tv/series/fotoperiodistas/588" target="_blank" class="boton-video">
+                        Ver Video
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Galería -->
+    <section class="seccion-galeria">
+        <div class="container">
+            <h2 class="texto-seccion">Galería</h2>
+            
+            <!-- Filtros -->
+            <div id="indice-categoria" class="filtros">
+                <button data-categoria="todo" class="boton-filtro">Todo</button>
+                <button data-categoria="cultura" class="boton-filtro">Cultura Mexicana</button>
+                <button data-categoria="historia" class="boton-filtro">Historia</button>
+                <button data-categoria="documental" class="boton-filtro">Documentales</button>
+            </div>
+
+            <!-- Imágenes mostradas egun la categoría -->
+            <div class="coleccion-galeria">
+                <!-- Cultura Mexicana -->
+                <div class="tarjeta-imagen cultura">
+                    <img src="image/cultura1.jpg"">
+                </div>
+                <div class="tarjeta-imagen cultura">
+                    <img src="image/cultura2.jpg"">
+                </div>
+                <div class="tarjeta-imagen cultura">
+                    <img src="image/cultura3.jpg">
+                </div>
+
+                <!-- Historia -->
+                <div class="tarjeta-imagen historia">
+                    <img src="image/historia1.jpg">
+                </div>
+                <div class="tarjeta-imagen historia">
+                    <img src="image/historia2.jpg">
+                </div>
+                <div class="tarjeta-imagen historia">
+                    <img src="image/historia3.jpg">
+                </div>
+
+                <!-- Documentales -->
+                <div class="tarjeta-imagen documental">
+                    <img src="image/documental1.jpg">
+                </div>
+                <div class="tarjeta-imagen documental">
+                    <img src="image/documental2.jpg">
+                </div>
+                <div class="tarjeta-imagen documental">
+                    <img src="image/documental3.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pie-pagina">
+        <div class="container">
+            <h3 class="texto-footer">Contacto</h3>
+            <div class="contacto-info">
+                <p>Email: contacto@enriquerashide.com</p>
+                <p>Tel: +52 7712345678</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/codigo.js"></script>
+</body>
+</html>

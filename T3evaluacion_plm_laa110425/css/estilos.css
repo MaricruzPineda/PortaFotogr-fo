@@ -1,0 +1,239 @@
+/*colores en variables*/
+:root {
+    --color-primario: #C70D3A;
+    --color-secundario: #E8A87C;
+    --color-acento: #41B3A3;
+    --color-texto: #2C3E50;
+    --color-fondo: #f8f9fa;
+    --color-fondo-oscuro: #1a1a1a;
+}
+
+/* generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navegación */
+.barra-navegacion {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.nav-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.enlaces-sociales {
+    display: flex;
+    gap: 1rem;
+}
+
+.enlaces-sociales a {
+    color: #666;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.enlaces-sociales a:hover {
+    color: var(--color-primario);
+}
+
+/* fuentes  */
+.texto-titulo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.texto-inicioenq {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.texto-subtitulo {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.texto-seccion {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* el inicio */
+.seccion-inicioenq {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.seccion-inicioenq::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+}
+
+.inicioenq-contenido {
+    position: relative;
+    z-index: 1;
+}
+
+/* sobre mi, galeria y el video */
+.seccion-sobre-mi,
+.seccion-video,
+.seccion-galeria {
+    padding: 5rem 0;
+}
+
+.seccion-video {
+    background-color: #f5f5f5;
+}
+
+.sobre-mi-contenido {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Video */
+.contenedor-video {
+    max-width: 900px;
+    margin: 0 auto;
+    aspect-ratio: 16/9;
+    background-color: #000;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.video-placeholder {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 2rem;
+}
+
+.boton-video {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background-color: var(--color-primario);
+    color: white;
+    text-decoration: none;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.boton-video:hover {
+    background-color: #a30b2f;
+}
+
+/* Galería */
+.filtros {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.boton-filtro {
+    padding: 0.5rem 1.5rem;
+    border: 2px solid var(--color-primario);
+    border-radius: 25px;
+    background: none;
+    color: var(--color-primario);
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.boton-filtro:hover,
+.boton-filtro.activo {
+    background-color: var(--color-primario);
+    color: white;
+}
+
+.coleccion-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.tarjeta-imagen {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-imagen img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+
+/* Footer */
+.pie-pagina {
+    background-color: var(--color-fondo-oscuro);
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.texto-footer {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contacto-info {
+    margin-bottom: 1.5rem;
+}
+
+.contacto-info p {
+    margin-bottom: 0.5rem;
+}
